@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: Verdana, Geneva, sans-serif;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
+    font-size: 3rem;
+    }
+    #target {
+    display: flex;
+    margin-left: 1rem;
+    position: relative;
+    /* margin-top: -2px; */
+    }
+    #target::after {
+    content: "";
+    position: absolute;
+    height: 3.5rem;
+    width: 5px;
+  background-color: black;
+  top: 0;
+  transform: translateY(-4px);
+  right: -5px;
+  animation: animate 0.8s linear infinite;
+    }
+    @keyframes animate {
+      50% {
+      opacity: 0.1;
+      }
+      100% {
+        opacity: 1;
+        }
+   }
